@@ -92,7 +92,7 @@ function LogIn() {
                     Login
                 </button>
                 <div className="forgotPassowrd">
-                   <Link to="ForgotPassword"> Forgot Password </Link>
+                   <Link to="/ForgotPassword"> Forgot Password </Link>
                 </div>
                 <div>
                     <button className="Registerbtn"onClick={handleRedirect}>

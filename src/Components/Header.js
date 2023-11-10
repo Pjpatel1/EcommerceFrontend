@@ -54,53 +54,53 @@ function Header ()
         <div className="FreeSpace">
         </div>
         <nav ref={navRef}>
-            <Link to="All_items" onClick={(e)=>{showNavbar(e)}}> 
+            <Link to="/All_items" onClick={(e)=>{showNavbar(e)}}> 
                 <div className="Nav-Elements">
                     All Items
                 </div>
             </Link>
-            <Link to="Flyers">
+            <Link to="/Flyers">
                 <div className="Nav-Elements" onClick={(e)=>{showNavbar(e)}}>
                     Flyer
                 </div>
             </Link>
-            <Link to="Vegetable">
+            <Link to="/Vegetable">
                 <div className="Nav-Elements" onClick={(e)=>{showNavbar(e)}}> 
                     Vegetable
                 </div>
             </Link>
-            <Link to = "IndianSnacks">
+            <Link to = "/IndianSnacks">
                 <div className="Nav-Elements" onClick={(e)=>{showNavbar(e)}}>
                     Indian Snacks
                 </div>
             </Link>
-            <Link to = "Lentils">
+            <Link to = "/Lentils">
                 <div className="Nav-Elements" onClick={(e)=>{showNavbar(e)}}>
                     Lentils
                 </div>
             </Link>
            
-            <Link to = "Drinks">
+            <Link to = "/Drinks">
                 <div className="Nav-Elements" onClick={(e)=>{showNavbar(e)}}>
                     Drinks
                 </div>
             </Link>
-            <Link to =  "Flowers">
+            <Link to =  "/Flowers">
                 <div className="Nav-Elements" onClick={(e)=>{showNavbar(e)}}>
                     Flowers
                 </div>
             </Link>
-            <Link to = "Lentils">
+            <Link to = "/Lentils">
                 <div className="Nav-Elements" onClick={(e)=>{showNavbar(e)}}>
                     Lentils
                 </div>
             </Link>
-            <Link to = "Frozen">
+            <Link to = "/Frozen">
                 <div className="Nav-Elements" onClick={(e)=>{showNavbar(e)}}>
                     Frozen Foods
                 </div>
             </Link>
-            <div className="CartIconCover" onClick={(e)=>{showNavbar(e)}}>
+            <div className="/CartIconCover" onClick={(e)=>{showNavbar(e)}}>
                 <img src={CartLogo} alt="UserCart" className="Cart" onClick={()=>openCart()}></img>
             </div>
             <button
@@ -130,8 +130,8 @@ function Header ()
                     </>
                 ) : (
                     <>
-                        <Link to = "login"><Dropdown.Item onClick={handleLogin} >Login</Dropdown.Item></Link>
-                        <Link to = "Signup"><Dropdown.Item onClick={handleSignup} >Signup</Dropdown.Item></Link>
+                        <Link to = "/login"><Dropdown.Item onClick={handleLogin} >Login</Dropdown.Item></Link>
+                        <Link to = "/Signup"><Dropdown.Item onClick={handleSignup} >Signup</Dropdown.Item></Link>
                     </>
                 )}
                 </Dropdown.Menu>

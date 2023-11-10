@@ -25,22 +25,23 @@ function App() {
     <BrowserRouter >
       <Header/>
       <Routes>
-        <Route path='Landing' element={<Landing />} />
+        <Route path='/Landing' element={<Landing />} />
         <Route path="/" element={<Preloader />}/>
-        <Route path='All_items' element={<AllItems/>} />
-        <Route path = 'Drinks' element={<Drinks/>}/>
-        <Route path = 'Flowers' element = {<Flowers/>}/>
-        <Route path='Flyers' element = {<Flyers/>} />
-        <Route path='Frozen' element = {<Frozen/>}/>
-        <Route path = 'IndianSnacks' element={<IndianSnacks/>}/>
-        <Route path='Lentils' element={<Lentils/>}/>
-        <Route path='Vegetable' element={<Vegetables/>}/>
+        <Route path='/All_items' element={<AllItems/>} />
+        <Route path = '/Drinks' element={<Drinks/>}/>
+        <Route path = '/Flowers' element = {<Flowers/>}/>
+        <Route path='/Flyers' element = {<Flyers/>} />
+        <Route path='/Frozen' element = {<Frozen/>}/>
+        <Route path = '/IndianSnacks' element={<IndianSnacks/>}/>
+        <Route path='/Lentils' element={<Lentils/>}/>
+        <Route path='/Vegetable' element={<Vegetables/>}/>
+        <Route path="/ProductDetail" element={<ProductDetails/>}/>
+        <Route path="/login" element={<LogIn/>}/>
+        <Route path="/Signup" element={<Signup/>}/>
+        <Route path="/ForgotPassword" element={<Forgotpassword/>}/>
+        <Route path="/userCart" element={<UserCart/>}/>
         <Route path="*" element={<NotFoundPage />} />
-        <Route path="ProductDetail" element={<ProductDetails/>}/>
-        <Route path="login" element={<LogIn/>}/>
-        <Route path="Signup" element={<Signup/>}/>
-        <Route path="ForgotPassword" element={<Forgotpassword/>}/>
-        <Route path="userCart" element={<UserCart/>}/>
+
       </Routes>
     </BrowserRouter>
     </UserProvider>
